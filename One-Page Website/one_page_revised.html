@@ -3,8 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<title>My own website</title>
+		<link type="text/css" rel="stylesheet" href="css/one_page_website.css">
 	</head>
-	<body>
+
+	<body bgcolor="grey">
 	
 		<!--NAV-->
 		<div>
@@ -23,7 +25,7 @@
 		<div id="Home">
 			<div>
 				<div>
-					<span>Thank you for checking out my website :) I can't sleep without a running hose in my pocket.</span>
+					<p><span>Thank you for checking out my website :) I can't sleep without a running hose in my pocket.</span></p>
 				</div>
 			</div>
 		</div>
@@ -34,7 +36,7 @@
 			<div id="Image">
 				<h1>Image</h1>
 				<div>
-					<img src="bred.png">
+					<img src="bred.png" width="500" height="300">
 				</div>
 			</div>
 		</section>
@@ -63,12 +65,12 @@
 						<p>
 							Please provide us with your basic contact information.
 						</p>
-						<div>
+						<div class="rsvp">
 							<form action="" method="post">
-								<input class="ravp" type="text" value="First Name">
-								<input class="ravp" type="text" value="Last Name">
-								<input class="ravp" type="text" value="Email Address">
-								<input class="ravp" type="text" value="Phone Number">
+								<input class="ravp" type="text" onfocus="this.value=''" maxlength="20" value="First Name">
+								<input class="ravp" type="text" onfocus="this.value=''" maxlength="20" value="Last Name">
+								<input class="ravp" type="text" onfocus="this.value=''" maxlength="30" value="Email Address">
+								<input class="ravp" type="text" onfocus="this.value=''" maxlength="10" value="Phone Number">
 								<div class="form-spacer">
 									<label class="terms">Terms and Conditions</label>
 								</div>
