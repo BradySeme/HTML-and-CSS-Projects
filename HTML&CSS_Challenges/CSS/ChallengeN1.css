@@ -1,0 +1,154 @@
+.center {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 500px;
+    height: 500px;
+}
+
+.photo {
+    position: relative;
+    padding-top: auto;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    
+}
+
+.photo img {
+    filter: brightness(200%);
+    border: 4px solid black;
+    border-radius: 50px;
+    border-width: auto;
+}
+
+.imgtext {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    right: 50%;
+    color: white;
+    z-index: 1;
+}
+
+.videotext{
+    position: absolute;
+    top: 550px;
+    left: 50%;
+    color: aquamarine;
+    text-align: center;
+    z-index: 1;
+    transform: translate(-50%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #865555;
+}
+
+.photo:hover .overlay {
+    opacity: 0.5;
+}
+
+.text {
+    position: absolute;
+    opacity: 0;
+    color: white;
+    top: 10px;
+    left: 35%;
+    right: 50%;
+    transition: .5s ease;
+}
+
+.photo:hover .text {
+    opacity: 1;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    border: 500px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 95px;
+    padding: 0px;
+    bottom: 0;
+}
+
+table, th, td {
+    text-align: center;
+    border:1px solid black;
+    border-style: dashed;
+    padding: auto;
+}
+
+th {
+    background-color: aquamarine;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: aquamarine;
+    position: fixed;
+    top: 0;
+    width: auto;
+    border-radius: 15px;
+    z-index: 2;
+  
+}
+  
+.navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 23px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.navbar a:hover {
+    background: darkturquoise;
+    color: black;
+}
+
+.row {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.column {
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    height: auto;
+    padding: 10px;
+    color: darkblue;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+p:hover {
+    color: blue;
+}
